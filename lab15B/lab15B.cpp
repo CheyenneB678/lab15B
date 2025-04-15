@@ -16,3 +16,7 @@ T half(T value) {
 	return value / 2;
 }
 
+//Overload for int type
+int half(int value) {
+	return static_cast<int>(round(static_cast<float>(value) / 2));
+}
